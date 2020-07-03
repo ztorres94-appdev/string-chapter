@@ -14,7 +14,7 @@ end
 
 describe "string_strip.rb" do
   it "should output 'remove outside spaces'", points: 1 do
-    expect { require_relative '../../string_strip' }.to output("remove the outside spaces").to_stdout
+    expect { require_relative '../../string_strip' }.to output(/remove the outside spaces/).to_stdout
   end
 end
 
@@ -32,7 +32,7 @@ end
 
 describe "string_chomp.rb" do
   it "should remove ending '$'", points: 1 do
-    expect { require_relative '../../string_chomp' }.to output("Hello!\n").to_stdout
+    expect { require_relative '../../string_chomp' }.to output(/Hello!/).to_stdout
   end
 end
 
@@ -40,6 +40,6 @@ describe "string_gets.rb" do
   it "should output 'Hello, name!'" , points: 1 do
     allow_any_instance_of(Object).to receive(:gets).and_return("jelani")
 
-    expect { require_relative '../../string_gets' }.to output("Hello, Jelani!\n").to_stdout
+    expect { require_relative '../../string_gets' }.to output(/Hello, Jelani!/).to_stdout
   end
 end
