@@ -38,7 +38,7 @@ end
 
 describe "string_gets.rb" do
   it "should output 'Hello, name!'" , points: 1 do
-    allow_any_instance_of(Object).to receive(:gets).and_return("jelani")
+    allow_any_instance_of(Object).to receive(:gets).and_return("jelani\n")
 
     expect { require_relative '../../string_gets' }.to output(/Hello, Jelani!/).to_stdout
   end
