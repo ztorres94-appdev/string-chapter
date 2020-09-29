@@ -58,3 +58,21 @@ Should work similarly to the following:
 jelani
 "Hello, Jelani!"
 ```
+
+## Specs
+<details>
+  <summary>Click here to see names of each test</summary>
+
+string_multiplication.rb should output 'HoHoHo' using String multiplication 
+
+string_strip.rb should output 'remove outside spaces'
+
+string_case.rb should output 'HELLO friends AnD FaMiLy' 
+
+string_gsub.rb should output 'put spaces in between these words' 
+
+string_chomp.rb should remove ending '$' 
+
+string_gets.rb should output 'Hello, name!' 
+
+</details>
