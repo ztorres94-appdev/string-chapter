@@ -1,4 +1,5 @@
-image: jelaniwoods/appdev2021-string-chapter
+image:
+  file: Dockerfile
 
 tasks:
   - init: bin/setup
