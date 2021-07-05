@@ -6,4 +6,4 @@
 
 outside_spaces = "    remove the outside spaces    "
 
-p outside_spaces
+p outside_spaces.strip

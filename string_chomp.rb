@@ -4,4 +4,6 @@
 # 
 # using the given starting variable.
 
-greeting = "Hello!$"
+greeting = "Hello!$".chomp("$")
+
+p greeting
